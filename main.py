@@ -2,7 +2,6 @@ import os
 import numpy as np
 import cv2 as cv
 import time
-import pyautogui
 import matplotlib.pyplot as plt
 import matplotlib.widgets as widgets
 from mss import mss
@@ -88,6 +87,7 @@ height = height.tolist()
 width = width - left
 height = height - top
 
+#creates a variable that will save last state of subtitles for later use
 old = ""
 
 ###ss_time = time()
@@ -133,6 +133,7 @@ while(True):
         pass
 
     elif data != old:
+        #if there was a change in the subtitles
         translation = translator.translate(data, dest = OUTPUTLANG)
         print(translation.text)
 
