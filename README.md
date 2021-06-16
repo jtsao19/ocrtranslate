@@ -12,7 +12,7 @@ I wrote this up originally for my own personal use because I was watching a few 
  -googletrans (alpha version seems to work best googletrans==3.1.0a0)
  -cv2
  
- Install tesseract engine
+ Install tesseract engine (https://github.com/UB-Mannheim/tesseract/wiki)
  -If not installed to the same directory as python script, uncomment this line in main.py "pytesseract.pytesseract.tesseract_cmd = r'<PATH>'" and replace path.
  -For languages besides english, OCR language packs available at https://github.com/tesseract-ocr/tessdata/ 
  
